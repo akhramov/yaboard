@@ -1,0 +1,7 @@
+h1 =title
+-if @boards.any? 
+  ul.boards
+  - @boards.each do |board|
+    = board.name
+-else 
+  p Create some boards!
